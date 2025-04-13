@@ -3,6 +3,4 @@ export default abstract class DiscordEvent {
     public once: Boolean = false;
 
     abstract execute(...args: any[]): Promise<void>;
-
 }
-

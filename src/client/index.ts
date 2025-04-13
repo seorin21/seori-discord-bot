@@ -1,7 +1,7 @@
 import {Client, Collection, GatewayIntentBits, REST, Routes} from "discord.js";
 import {readdirSync} from "fs";
 import * as path from "path";
-import ChatCommand from "../command/chat";
+import ChatCommand from "../command";
 import config from "../config/bot.json";
 import DiscordEvent from "../event";
 

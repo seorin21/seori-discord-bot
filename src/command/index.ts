@@ -1,8 +1,8 @@
-import {CommandInteraction, SlashCommandBuilder} from "discord.js";
+import {ChatInputCommandInteraction, SlashCommandBuilder} from "discord.js";
 
-export default abstract class Command {
+export default abstract class ChatCommand {
     abstract data: SlashCommandBuilder;
-    abstract execute(interaction: CommandInteraction): Promise<void>;
+    abstract execute(interaction: ChatInputCommandInteraction): Promise<void>;
 
     public readonly isDeferReply: Boolean = true
     public readonly isEphemeral: Boolean = true
