@@ -1,4 +1,3 @@
-import {CLIENT} from "./client";
+import loader from "./client/loader";
 
-const client = new CLIENT()
-client.start().then(_ => console.log("Clear?"))
+loader.client.start().then(() => console.log("Clear?"))

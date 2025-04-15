@@ -3,3 +3,6 @@ package-lock.json
 
 # IntelliJ IDEA
 .idea/
+
+# Bot Private Config
+src/config/*.json
