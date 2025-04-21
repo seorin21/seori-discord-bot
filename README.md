@@ -1,5 +1,8 @@
 ### 타입스크립트로 작성된 디스코드봇 예문!
 
+[@seorin21/discord-bot-simple](https://github.com/seorin21/discord-bot-simple)에서 파생된, commonjs -> module로 변경된 EMS
+discord.js 예제입니다.
+
 ## 0. npm 모듈 설치
 
 `npm i --save`를 하여, 의존성 모듈을 전부 다운받습니다.
