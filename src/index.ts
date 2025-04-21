@@ -1,3 +1,3 @@
-import loader from "./client/loader";
+import loader from "./client/loader.js";
 
-loader.client.start().then(() => console.log("Clear?"))
+loader._.start().then(() => console.log("Clear?"))

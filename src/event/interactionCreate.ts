@@ -1,6 +1,6 @@
 import {Events, Interaction, MessageFlags} from "discord.js";
-import {CLIENT} from "../client";
-import DiscordEvent from "./";
+import {CLIENT} from "../client/index.js";
+import DiscordEvent from "./index.js";
 
 export default class InteractionCreate extends DiscordEvent {
     name = Events.InteractionCreate.toString();

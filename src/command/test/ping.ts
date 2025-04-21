@@ -1,4 +1,4 @@
-import ChatCommand from "../index";
+import ChatCommand from "../index.js";
 import {ChatInputCommandInteraction, SlashCommandBuilder} from "discord.js";
 
 export default class Ping extends ChatCommand {

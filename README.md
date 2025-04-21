@@ -1,5 +1,7 @@
 # [서린 스튜디오](https://discord.gg/eK794Myjs6) 통합 디스코드 봇
 
+최대한 하드코딩 배제하였습니다~
+
 ### Bot Channel
 
 \- Join Message!!!!!!!!!!!!!!!!!

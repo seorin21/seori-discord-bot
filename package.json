@@ -1,21 +1,28 @@
 {
     "name": "seori-discord-bot",
     "version": "1.0.0",
-    "description": "A simple Discord bot using TypeScript",
-    "main": "index.ts",
+    "description": "",
+    "main": "dist/index.js",
     "scripts": {
-        "start": "ts-node ./src"
+        "dev": "tsx watch src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "build:start": "npm run dev & npm start"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "type": "commonjs",
+    "type": "module",
     "dependencies": {
-        "discord.js": "^14.18.0",
-        "ts-node": "^10.9.2",
-        "typescript": "^5.8.3"
+        "@discordjs/rest": "^2.4.3",
+        "discord-api-types": "^0.37.33",
+        "discord.js": "^14.18.0"
     },
     "devDependencies": {
-        "@types/node": "^22.14.1"
+        "@types/node": "^22.14.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3",
+        "wcwidth": "^1.0.1",
+        "tsx": "^4.19.3"
     }
 }
