@@ -1,6 +1,7 @@
 import {Events, GuildMember} from "discord.js";
+import DiscordEvent from "./index.js";
 
-export default class WelcomeUser extends Event {
+export default class WelcomeUser extends DiscordEvent {
     name = Events.GuildMemberAdd.toString();
     once = false;
 

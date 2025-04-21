@@ -56,7 +56,6 @@ export class CLIENT extends Client {
                     const command = new module.default() as ChatCommand;
                     this.commands.set(command.data.name, command);
                 } catch (error) {
-                    console.error(`[Command Loader] Error loading ${file}:`, error);
                     console.log(`올바르지 않은 파일 ${file}은 무시되었습니다. 해당 위치는 ChatCommand 타입만 가능합니다!`);
                 }
             }
@@ -91,18 +90,13 @@ export class CLIENT extends Client {
 
                 const event = new module.default() as DiscordEvent;
                 const executor = (...args: any[]) => {
-                    try {
-                        event.execute(...args);
-                    } catch (error) {
-                        console.error(`[Event Execution Error] ${event.name}:`, error);
-                    }
+                    event.execute(...args);
                 };
 
                 event.once
                     ? this.once(event.name, executor)
                     : this.on(event.name, executor);
             } catch (error) {
-                console.error(`[Event Loader] Error loading ${file}:`, error);
                 console.log(`올바르지 않은 파일 ${file}은 무시되었습니다. 해당 위치는 Event 타입만 가능합니다!`);
             }
         }
